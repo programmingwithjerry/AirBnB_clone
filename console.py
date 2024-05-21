@@ -295,14 +295,14 @@ class CommandInterpreter(cmd.Cmd):
             elif (args[1] == 'count()'):
                 CommandInterpreter.handle_class_count(line, cls_name)
             else:
-                cmds = re.split('\(|\"|\)', args[1])
+                cmds = re.split(r'\(|\"|\)', args[1])
                 cmds = list(filter(lambda s: s != '', cmds))
                 if cmds[0] == 'show':
                     CommandInterpreter.handle_class_show(cls_name, cmds[1])
                 elif cmds[0] == 'destroy':
                     CommandInterpreter.handle_class_destroy(cls_name, cmds[1])
                 elif cmds[0] == 'update':
-                    cmds = re.split('\(|\"|\)|\{|\'|\}|: |:|, ', args[1])
+                    cmds = re.split(r'\(|\"|\)|\{|\'|\}|: |:|, ', args[1])
                     cmds = list(filter(lambda s: s != '' and s != ' ', cmds))
                     cmds = list(filter(lambda s: s != ', ', cmds))
                     if (len(cmds) == 4):
@@ -321,4 +321,3 @@ class CommandInterpreter(cmd.Cmd):
 
 if __name__ == '__main__':
     CommandInterpreter().cmdloop()
-
