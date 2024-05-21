@@ -44,7 +44,12 @@ class FileStorage:
         Serializes the objects in the storage dictionary to a JSON file.
         """
         with open(FileStorage.__file_path, mode='w', encoding='UTF-8') as f:
-            obj_dict = {key: obj.to_dict() for key, obj in FileStorage.__objects.items()}
+            obj_dict = {
+                key: obj.to_dict()
+                for key, obj in FileStorage.__objects.items()
+            }
+            """obj_dict = {key: obj.to_dict() for key, obj in
+             FileStorage.__objects.items()}"""
             json_str = json.dumps(obj_dict)
             f.write(json_str)
 
