@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="styles/103-common.css">
+    <link rel="stylesheet" href="styles/103-header.css">
+    <link rel="stylesheet" href="styles/103-footer.css">
+    <link rel="stylesheet" href="styles/103-filters.css">
+    <link rel="stylesheet" href="styles/103-places.css">
+    <title>AirBnB clone</title>
+  </head>
+  <body>
+    <header>
+      <div class="mobile_nav" role="navigation" aria-label="Navigate through site content">
+        <label for="main_check" class="main_nav_burguer" aria-label="Responsive popup menu">|||</label>
+        <input type="checkbox" id="main_check" name="main_check" class="main_nav_check" aria-hidden="true" tabindex=0>
+          <nav>
+              <ul class="nav_bar_level1">
+                <li>
+                    <label for="second_check"><span>States</span></label>
+                    <input type="checkbox" name="second_check" id="second_check" aria-hidden="true">
+                  <ul>
+                    <li><span>Arizona</span></li>
+                    <li><span>California</span></li>
+                  </ul>
+                  </li>
+                <li>
+                  <label for="third_check"><span>Amenities</span></label>
+                  <input type="checkbox" name="second_check" id="third_check" aria-hidden="true">
+                  <ul>
+                    <li><span>Internet</span></li>
+                    <li><span>Tv</span></li>
+                    <li><span>Wifi</span></li>
+                    <li><span>Kitchen</span></li>
+                    <li><span>Iron</span></li>
+                  </ul>
+                  </li>
+              </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <section class="filters" role="navigation">
+        <div class="locations">
+          <h3>States</h3>
+          <h4>California, Arizona...</h4>
+          <ul class="popover">
+            <li><h2>Arizona:</h2>
+              <ul>
+                <li>Page</li>
+                <li>Page2</li>
+              </ul>
+            </li>
+            <li><h2>California:</h2>
+              <ul>
+                <li>San Francisco</li>
+                <li>Los Altos</li>
+              </ul>
+            </li>
+            </ul>
+        </div>
+        <div class="amenities">
+          <h3>Amenities</h3>
+          <h4>Internet, Kitchen...</h4>
+          <ul class="popover">
+            <li>Internet</li>
+            <li>Tv</li>
+            <li>Kitchen</li>
+            <li>Iron</li>
+          </ul>
+        </div>
+        <button type="button" name="button">Search</button>
+      </section>
+
+      <section class="places">
+        <h1>Places</h1>
+        <article>
+          <div class="article_places_header">
+            <h2>My home</h2>
+            <div class="price_by_night">$80</div>
+          </div>
+          <div class="information">
+            <div class="max_guest">2 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>Donkey</p>
+          </div>
+          <div class="description">
+            <p>
+              Located in the hills of the Scottish Highlands, Shrek’s
+              Swamp is a stumpy, secluded haven fit for a solitude-seeking
+              ogre… and for the first time ever, a handful of his biggest
+              fans, thanks to yours truly. I’m swamp-sitting while Shrek’s
+              away this Halloween, and I’m absolutely delighted to invite
+              you in for a fairytale stay. Oh, and never mind the “BEWARE”
+              signs. They’re probably for decoration.
+            </p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Barrack Obama the 27th August 2021</h3>
+                <p>It is simply natural to be natural and live naturally</p>
+              </li>
+              <li>
+                <h3>From Connor 4th January 2021</h3>
+                <p>You will surely enjoy your stay!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h2>Tiny house</h2>
+          <div class="price_by_night">$65</div>
+          <div class="information">
+            <div class="max_guest">4 Guests</div>
+            <div class="number_rooms">2 Bedrooms</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>Marc Gené</p>
+          </div>
+          <div class="description">
+            <p>
+              Since I was a kid, I’ve loved the track. My dream came true when I
+              turned pro and became a Scuderia Ferrari tester. As a driver and fan,
+              it’s a dream to be this close to racing history. On May 19, take
+              part in Ferrari’s legacy by watching our home race, staying overnight
+              in Sala delle Vittorie inside Museo Ferrari in Maranello—sleeping
+              next to 110 elite trophies, and the Ferrari cars that won those trophies.
+              Then ride alongside me on our racetrack: Pista di Fiorano. Tifosi,
+              this is all for you.
+            </p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From G Bale the 19th March, 2021</h3>
+                <p>Marc Gené is super host. Nothing more i can say. 5 star!</p>
+              </li>
+              <li>
+                <h3>From Dr Jerry 20th January, 2023</h3>
+                <p>Higly recommended!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h2>A suite</h2>
+          <div class="price_by_night">$190</div>
+          <div class="information">
+            <div class="max_guest">5 Guests</div>
+            <div class="number_rooms">3 Bedroom</div>
+            <div class="number_bathrooms">2 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b> Seth Rogen</p>
+          </div>
+          <div class="description">
+            <p>
+              Hi. It’s me, Seth! If you’re reading this, you’re considering booking
+              a night at the Houseplant inspired retreat. What makes it Houseplant-y,
+              you may be asking? Well, it’s stocked with some of our favorite Housegoods
+              (even a pre-release copy of our NEW Vinyl Box Set Vol 2!). The mid-century
+              styling and LA views also have a distinctly Houseplant feel.
+              And there’s the fact that I’ll be there to welcome you, which given
+              that I’m the founder, adds to the Houseplant-ness. I AM HOUSEPLANT!!!
+            </p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>1 Review</h2>
+            <ul>
+              <li>
+                <h3>From Gary Moore the 13th August 2022</h3>
+                <p>I love this place. Amazing!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="article_places_header">
+            <h2>My house</h2>
+            <div class="price_by_night">$50</div>
+          </div>
+          <div class="information">
+            <div class="max_guest">2 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>John Seena</p>
+          </div>
+          <div class="description">
+            <p>This is a lovely 1 bathroom apartament that can accommodate 2 people. It locates at the center of Shanghai and next to subway line 1, 1 stop to People Square, 2 stops to Bund, 3 stops to Jungan Temle.</p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Chidi the 20th July 2022</h3>
+                <p>Seth Rogen is an epic host. Nothing more i can say. 5 star!</p>
+              </li>
+              <li>
+                <h3>From Hussaini 19th November, 2021</h3>
+                <p>Higly recommended!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="article_places_header">
+            <h2>Illela rooms</h2>
+            <div class="price_by_night">$79</div>
+          </div>
+          <div class="information">
+            <div class="max_guest">2 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>Buzz Brown</p>
+          </div>
+          <div class="description">
+            <p>
+              Many Christmases ago, the McCallisters went to Paris – well, most of us. 
+              Though we’re older and wiser now (I’ve even got my own security firm),
+              we’re never too old for holiday hijinks. So while we’re away on vacation
+              (all of us, this time), I’m inviting one crew of mischief makers to let
+              their inner eight-year-olds run free in my childhood home on Dec. 12.
+            </p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Jay-Jay Okocha the 27th August 2021</h3>
+                <p>
+                  Buzz Brown is an epic host. Nothing more can say. 5 star!
+                </p>
+              </li>
+              <li>
+                <h3>From Mikel Obi 4th September, 2022</h3>
+                <p>Higly recommended!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <div class="article_places_header">
+            <h2>Donkey Kong Country</h2>
+            <div class="price_by_night">$80</div>
+          </div>
+          <div class="information">
+            <div class="max_guest">8 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>Sandi Sandil</p>
+          </div>
+          <div class="description">
+            <p>
+              Hey Deschutes County residents! Dust off those membership cards for a
+              sleepover inside the world’s last BLOCKBUSTER. When you call dibs on this
+              stay, you’re booking a night back in the 90s, but this time you won’t have
+              to beg your parents to rent the latest horror flick–we’ll give you the keys
+              to the entire store!
+            </p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Chimmamanda T. the 7th October, 2022</h3>
+                <p>Sandi is an epic host. Nothing more i can say. 5 star!</p>
+              </li>
+              <li>
+                <h3>From Farid Bande 9th April, 2022</h3>
+                <p>Higly recommended!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        </section>
+    </div>
+    <footer aria-label="Footer brand information">
+      <p>Best School</p>
+    </footer>
+  </body>
+</html>
